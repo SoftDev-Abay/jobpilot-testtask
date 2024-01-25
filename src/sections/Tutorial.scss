@@ -27,7 +27,16 @@
         // 213 4
         position: absolute;
         top: 4px;
-        left: 213px;
+        left: 205px;
+        z-index: 1;
+      }
+      .reverce-arrow {
+        // 64 213
+        position: absolute;
+        top: 70px;
+        left: 205px;
+        transform: scale(-1, 1);
+        rotate: 180deg;
         z-index: 1;
       }
       .step-icon-wrapper {

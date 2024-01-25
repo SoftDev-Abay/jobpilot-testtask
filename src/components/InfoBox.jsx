@@ -1,9 +1,23 @@
 import React from "react";
 import "./InfoBox.scss";
 
-const InfoBox = ({ icon, title, subtitle, imgBoxBg = "#E7F0FA" }) => {
+const InfoBox = ({
+  icon,
+  title,
+  subtitle,
+  className,
+  styles,
+  imgBoxBg = "#E7F0FA",
+  containerBg = "white",
+}) => {
   return (
-    <div className="info-item">
+    <div
+      className={`info-item ${className}`}
+      style={{
+        background: containerBg,
+        ...styles,
+      }}
+    >
       <div className="img-box" style={{ background: imgBoxBg }}>
         <img src={icon} alt="" />
       </div>

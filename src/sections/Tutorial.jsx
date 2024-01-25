@@ -8,7 +8,7 @@ import userPlusIcon from "../assets/svg/userPlusIcon.svg";
 import arrow from "../assets/svg/arrow.svg";
 const Tutorial = () => {
   return (
-    <CardBg background="#F1F2F4" contentClassName="">
+    <CardBg background="#F1F2F4">
       <div className="tutorial-wrapper">
         <h1>How jobpilot work</h1>
         <div className="steps-container">
@@ -32,6 +32,8 @@ const Tutorial = () => {
               background: "white",
             }}
           >
+            <img className="reverce-arrow" src={arrow} alt="" />
+
             <div className="step-icon-wrapper">
               <div
                 className="step-icon-container"
@@ -50,6 +52,8 @@ const Tutorial = () => {
             </div>
           </div>
           <div className="step-box">
+            <img className="arrow" src={arrow} alt="" />
+
             <div className="step-icon-wrapper">
               <div className="step-icon-container">
                 <img src={magnifyingGlassPlusIcon} alt="" srcset="" />

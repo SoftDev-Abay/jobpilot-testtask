@@ -1,0 +1,19 @@
+.btn-view-all {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  border-radius: 3px;
+  border: 1px solid var(--Primary-50, #e7f0fa);
+  cursor: pointer;
+  span {
+    color: var(--Primary-500, #0a65cc);
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    text-transform: capitalize;
+  }
+}
