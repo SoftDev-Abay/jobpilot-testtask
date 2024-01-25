@@ -1,16 +1,12 @@
-* {
-  margin: 0px;
-  box-sizing: border-box;
-}
-
 .navigation-wrapper {
   width: 100%;
-  background-color: #F1F2F4;
+  background-color: #f1f2f4;
 }
 .navigation-wrapper .navigation-container {
   margin-left: auto;
   margin-right: auto;
   max-width: 1320px;
+  padding: 0 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +17,7 @@
   gap: 24px;
 }
 .navigation-wrapper .navigation-container .links a {
-  color: #5E6670;
+  color: #5e6670;
   text-decoration: none;
   padding: 14px 0;
   font-family: Inter;
@@ -31,22 +27,22 @@
   line-height: 20px; /* 142.857% */
 }
 .navigation-wrapper .navigation-container .links .active {
-  box-shadow: 0px -2px 0px 0px #0A65CC inset;
-  color: #0A65CC;
+  box-shadow: 0px -2px 0px 0px #0a65cc inset;
+  color: #0a65cc;
 }
 .navigation-wrapper .navigation-container .info {
   display: flex;
   gap: 24px;
 }
 .navigation-wrapper .navigation-container .info .phonenum-container {
-  color: #18191C;
+  color: #18191c;
   display: flex;
   align-items: center;
   gap: 8px;
 }
 .navigation-wrapper .navigation-container .info .phonenum-container span {
   flex-grow: 1;
-  color: #18191C;
+  color: #18191c;
   /* Body/Small/500 */
   font-family: Inter;
   font-size: 14px;
@@ -57,10 +53,10 @@
 .navigation-wrapper .navigation-container .info .lang-toggle {
   display: flex;
   align-items: center;
-  color: #5E6670;
+  color: #5e6670;
 }
 .navigation-wrapper .navigation-container .info .lang-toggle img {
   margin-right: 12px;
   width: 24px;
   height: 16px;
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=LinksBar.css.map */

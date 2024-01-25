@@ -1,0 +1,28 @@
+@use "../variables.scss" as *;
+
+.btn {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border: none;
+  border-radius: 3px;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  text-transform: capitalize;
+  cursor: pointer;
+  &.primary {
+    background: $primary-500;
+    color: white;
+  }
+  &.secondary {
+    background: white;
+    color: $primary-500;
+    border-radius: 3px;
+    border: 1px solid $primary-100;
+  }
+}
