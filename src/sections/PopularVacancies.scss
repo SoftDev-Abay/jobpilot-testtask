@@ -1,0 +1,33 @@
+@use "../variables.scss" as *;
+
+.vacancies-section-wrapper {
+  h1 {
+    color: var(--Gray-900, #18191c);
+
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    margin-bottom: 50px;
+  }
+  .vacancies-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+
+    .vacancy-item {
+      .name {
+        font-size: 18px;
+        color: var(--Gray-900, #18191c);
+        font-weight: 500;
+        line-height: 28px; /* 155.556% */
+        margin-bottom: 8px;
+      }
+      .open-amount {
+        color: var(--Gray-500, #767f8c);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+      }
+    }
+  }
+}

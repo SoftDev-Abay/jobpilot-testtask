@@ -1,1 +1,97 @@
 @use "../variables.scss" as *;
+.section-wrapper {
+}
+.content-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 149px;
+
+  align-items: center;
+  margin-bottom: 109px;
+  //   flex-wrap: wrap;
+  .content {
+    max-width: 679px;
+    flex: 0 1 679px;
+    .heading {
+      color: var(--Gray-900, #18191c);
+
+      /* Display/01 */
+      font-family: Inter;
+      font-size: 56px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 64px; /* 114.286% */
+      margin-bottom: 24px;
+    }
+    .subheading {
+      color: var(--Gray-600, #5e6670);
+
+      /* Body/Large/400 */
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 155.556% */
+      margin-bottom: 32px;
+    }
+    .searchbar {
+      display: flex;
+      align-self: center;
+      justify-content: space-between;
+      gap: 20px;
+      border-radius: 5px;
+      border: 1px solid $gray-100;
+      background: white;
+      padding: 12px;
+      width: 100%;
+      margin-bottom: 24px;
+      .search {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        // flex: 0 1 100%;
+        input {
+          color: $gray-600;
+          /* Body/Medium/400 */
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px; /* 150% */
+          outline: none;
+          border: none;
+          //   padding: 0 16px;
+          &::placeholder {
+            color: $gray-400;
+          }
+        }
+      }
+    }
+    .suggestions {
+      display: flex;
+      flex-wrap: wrap;
+      color: var(--Gray-700, #474c54);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px; /* 142.857% */
+      span {
+        &.title {
+          color: var(--Gray-400, #9199a3);
+        }
+        &.active {
+          color: var(--Primary-500, #0a65cc);
+        }
+      }
+    }
+  }
+}
+.info-contaner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 20px;
+}

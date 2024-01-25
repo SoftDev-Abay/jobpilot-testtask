@@ -1,0 +1,62 @@
+@use "../variables.scss" as *;
+
+.tutorial-wrapper {
+  h1 {
+    color: var(--Gray-900, #18191c);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    margin-bottom: 50px;
+  }
+  .steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    .step-box {
+      position: relative;
+      width: 264px;
+      border-radius: 12px;
+      display: inline-flex;
+      padding: 24px;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      .arrow {
+        // 213 4
+        position: absolute;
+        top: 4px;
+        left: 213px;
+        z-index: 1;
+      }
+      .step-icon-wrapper {
+        .step-icon-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 20px;
+          background: var(--Gray-Scale-White, #fff);
+          border-radius: 50%;
+        }
+      }
+      .step-title {
+        color: var(--Gray-900, #18191c);
+        text-align: center;
+
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        margin-bottom: 12px;
+      }
+      .step-description {
+        color: var(--Gray-500, #767f8c);
+        text-align: center;
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+      }
+    }
+  }
+}
