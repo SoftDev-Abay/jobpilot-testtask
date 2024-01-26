@@ -4,6 +4,17 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
+    h1 {
+      color: var(--Gray-Scale-900, #191f33);
+      text-align: center;
+
+      /* Heading/01 */
+      font-family: Inter;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 48px; /* 120% */
+    }
   }
   .featured-jobs-container {
     display: flex;

@@ -1,4 +1,5 @@
 import React from "react";
+import { FaLocationDot } from "react-icons/fa6";
 import locationIcon from "../assets/svg/locationIcon.svg";
 import bookmarkSimpleIcon from "../assets/svg/icons/bookmark-simple.svg";
 import "./JobBox.scss";
@@ -6,7 +7,6 @@ import "./JobBox.scss";
 const JobBox = ({ title, type, salary, company, location, companyIcon }) => {
   const salaryRange = salary.split(" - ");
   const salaryMin = parseInt(salaryRange[0].split("$")[1].split(",").join(""));
-  console.log(salaryMin);
   return (
     <>
       <div className={`featured-job ${salaryMin >= 50000 && "active"}`}>
@@ -24,7 +24,7 @@ const JobBox = ({ title, type, salary, company, location, companyIcon }) => {
           <div className="company-info">
             <div className="name">{company}</div>
             <div className="location">
-              <img src={locationIcon} alt="" srcset="" />
+              <FaLocationDot className="icon" />
               <span>{location}</span>
             </div>
           </div>

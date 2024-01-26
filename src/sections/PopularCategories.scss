@@ -5,6 +5,17 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
+    h1 {
+      color: var(--Gray-900, #18191c);
+      text-align: justify;
+
+      /* Heading/01 */
+      font-family: Inter;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 48px; /* 120% */
+    }
     button {
       display: flex;
       padding: 12px 24px;

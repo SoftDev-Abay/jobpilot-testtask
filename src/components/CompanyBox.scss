@@ -1,0 +1,92 @@
+.company-box {
+  flex: 1 1 424px;
+  display: flex;
+  width: 424px;
+  padding: 24px;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-100, #e4e5e8);
+  background: #fff;
+  box-shadow: 0px 2px 18px 0px rgba(24, 25, 28, 0.03);
+  &:hover {
+    box-shadow: 0px 2px 18px 0px rgba(24, 25, 28, 0.1);
+  }
+  button {
+    padding: 12px 24px;
+    align-self: stretch;
+    border-radius: 3px;
+    background: var(--Primary-50, #e7f0fa);
+    color: var(--Primary-500, #0a65cc);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    text-transform: capitalize;
+    border: none;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    .icon-wrapper {
+      display: flex;
+      padding: 12px;
+      align-items: flex-start;
+      gap: 10px;
+      border-radius: 4px;
+      border-radius: 4px;
+      background: #ea4c89;
+      img {
+      }
+    }
+    .company-info {
+      flex-grow: 1;
+      .title-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        .badge {
+          display: flex;
+          padding: 3px 12px;
+          align-items: flex-start;
+          gap: 10px;
+          border-radius: 52px;
+          background: var(--Danger-50, #fceeee);
+          span {
+            color: var(--Danger-500, #e05151);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px; /* 142.857% */
+          }
+        }
+        .name {
+          color: var(--Gray-Scale-900, #191f33);
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 28px; /* 155.556% */
+        }
+      }
+      .location {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        .icon {
+          display: flex;
+          width: 14px;
+          height: 14px;
+          justify-content: center;
+          align-items: center;
+          color: #767f8c;
+        }
+        span {
+          color: var(--Gray-500, #767f8c);
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px; /* 142.857% */
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.section-top-companies {
+  h1 {
+    align-self: stretch;
+    color: var(--Gray-900, #18191c);
+
+    /* Heading/01 */
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px; /* 120% */
+    margin-bottom: 50px;
+  }
+  .top-companies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}

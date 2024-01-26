@@ -96,11 +96,11 @@
       .location {
         display: flex;
         align-items: center;
-        gap: 8px;
-        img {
+        gap: 6px;
+        .icon {
           display: flex;
-          width: 18px;
-          height: 18px;
+          width: 14px;
+          height: 14px;
           justify-content: center;
           align-items: center;
           color: #767f8c;
