@@ -9,6 +9,7 @@ import quote from "../assets/svg/quote.svg";
 // star,
 
 import { FaQuoteLeft, FaQuoteRight, FaStar } from "react-icons/fa";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
 
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import TestimonialCard from "../components/TestimonialCard";
@@ -86,13 +87,18 @@ const Testimonials = () => {
             />
           </SwiperSlide>
         </Swiper>
-        <div className="custom-swiper-navigation">
-          <div className="custom-swiper-button-prev" onClick={handlePrev}>
-            Previous
-          </div>
-          <div className="custom-swiper-button-next" onClick={handleNext}>
-            Next
-          </div>
+
+        <div
+          className="custom-swiper-button custom-swiper-button-prev"
+          onClick={handlePrev}
+        >
+          <FaArrowLeft className="icon" />
+        </div>
+        <div
+          className="custom-swiper-button custom-swiper-button-next"
+          onClick={handleNext}
+        >
+          <FaArrowRight className="icon" />
         </div>
       </div>
     </CardBg>

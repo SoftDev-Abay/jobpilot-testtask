@@ -14,5 +14,30 @@
   .testimonials-wrapper {
     margin-top: 50px;
     margin-bottom: 50px;
+    position: relative;
+    .custom-swiper-button {
+      border-radius: 5px;
+      background: var(--Gray-Scale-White, #fff);
+      padding: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      z-index: 2px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      .icon {
+        width: 24px;
+        height: 24px;
+        color: #0a65cc;
+      }
+    }
+    .custom-swiper-button-prev {
+      left: -94px;
+    }
+    .custom-swiper-button-next {
+      right: -94px;
+    }
   }
 }
