@@ -42,7 +42,9 @@ const Hero = () => {
               Animation.
             </p>
           </div>
-          <img src={illustration} alt="" />
+          <div className="hero-img-container">
+            <img src={illustration} className="hero-img" alt="" />
+          </div>
         </div>
         <div className="info-contaner">
           <InfoBox icon={bagIcon} title="1,75,324" subtitle="Live Job" />

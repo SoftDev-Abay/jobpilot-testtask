@@ -5,13 +5,23 @@ import rusFlag from "../assets/img/rus_flag.png";
 import kazFlag from "../assets/img/kaz_flag.jpg";
 import phoneIcon from "../assets/svg/phoneIcon.svg";
 import toggleIcon from "../assets/svg/toggleIcon.svg";
+import {
+  // menu for adoptive navbar
+  FaBars,
+} from "react-icons/fa";
 const LinksBar = () => {
   const [activeLink, setActiveLink] = useState("Home");
   const [dropdown, setDropdown] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
       <div class="navigation-wrapper">
-        <div class="navigation-container">
+        <div
+          class="navigation-container"
+          style={{
+            height: menuOpen ? "fit-content" : "47px",
+          }}
+        >
           <div class="links">
             <a
               class={activeLink == "Home" && "active"}
@@ -96,6 +106,20 @@ const LinksBar = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div
+            className="menu-container"
+            style={{
+              alignItems: menuOpen ? "normal" : "center",
+              top: !menuOpen ? "0" : "14px",
+            }}
+          >
+            <FaBars
+              className="icon"
+              onClick={() => {
+                setMenuOpen(!menuOpen);
+              }}
+            />
           </div>
         </div>
       </div>

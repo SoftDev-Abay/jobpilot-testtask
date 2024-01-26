@@ -16,11 +16,18 @@
     margin-left: auto;
     margin-right: auto;
     .searchbar-container {
+      flex-shrink: 1;
+
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 32px;
       max-width: 1320px;
+      // screen less then 1300 px buttons will be hidden
+      @media (max-width: 1300px) {
+        justify-content: space-between;
+        width: 100%;
+      }
 
       .logo-container {
         display: flex;
@@ -47,7 +54,9 @@
         border-radius: 5px;
         border: 1px solid $gray-100;
         background: white;
-        padding: 9px 252px 9px 24px;
+        padding: 9px 12px 9px 24px;
+        width: 668px;
+        flex-shrink: 1;
 
         .country-filter {
           display: flex;
@@ -75,7 +84,9 @@
           display: flex;
           align-items: center;
           gap: 12px;
+          flex: 0 1 100%;
           input {
+            flex: 0 1 100%;
             color: $gray-600;
             /* Body/Medium/400 */
             font-family: Inter;
@@ -96,6 +107,11 @@
       display: flex;
       align-items: center;
       gap: 12px;
+
+      // screen less then 1300 px buttons will be hidden
+      @media (max-width: 1300px) {
+        display: none;
+      }
     }
   }
 }

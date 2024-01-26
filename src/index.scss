@@ -2,3 +2,14 @@
   font-family: Inter;
   margin: none;
 }
+
+@media (max-width: 1000px) {
+  .navigation-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .card-bg {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

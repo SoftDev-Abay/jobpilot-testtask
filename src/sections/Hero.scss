@@ -5,14 +5,23 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  gap: 149px;
-
+  column-gap: 149px;
+  row-gap: 40px;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 109px;
   //   flex-wrap: wrap;
+  .hero-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    .hero-img {
+    }
+  }
   .content {
     max-width: 679px;
-    flex: 0 1 679px;
+    flex: 0 1 100%;
     .heading {
       color: var(--Gray-900, #18191c);
 
