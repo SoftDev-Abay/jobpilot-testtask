@@ -6,6 +6,7 @@ import megaphoneIcon from "./svg/icons/megaphone.svg";
 import musicNotesIcon from "./svg/icons/music-notes.svg";
 import monitorPlayIcon from "./svg/icons/monitor-play.svg";
 import penNibIcon from "./svg/icons/pen-nib.svg";
+import googleLogo from "./svg/googleLogo.svg";
 
 export const mostPopularVacanciesData = [
   {
@@ -118,5 +119,165 @@ export const mostPopularCategories = [
     openPositions: 125,
     icon: databaseIcon,
     id: 8,
+  },
+];
+
+// Techical Support Specialist
+// PART-TIME Salary: $20,000 - $25,000
+// Senior UX Designer
+// Google Inc.
+// Dhaka, Bangladesh
+// FULL-TIME Salary: $20,000 - $25,000
+// Marketing Officer
+// Google Inc.
+// Dhaka, Bangladesh
+// INTERNSHIP Salary: $20,000 - $25,000
+// Google Inc.
+// Dhaka, Bangladesh
+// Junior Graphic Designer
+// Google Inc.
+// PART-TIME Salary: $20,000 - $25,000
+// Interaction Designer
+// Google Inc.
+// INTERNSHIP Salary: $20,000 - $25,000
+// Project Manager
+// Google Inc.
+// FULL-TIME Salary: $20,000 - $25,000
+// Dhaka, Bangladesh
+// Dhaka, Bangladesh
+// Dhaka, Bangladesh
+// Software Engineer
+// Visual Designer
+// Project Manager
+// FULL-TIME Salary: $20,000 - $25,000
+// FULL-TIME Salary: $20,000 - $25,000
+// FULL-TIME Salary: $20,000 - $25,000
+// Google Inc.
+// Google Inc.
+// Google Inc.
+// Dhaka, Bangladesh
+// Dhaka, Bangladesh
+// Dhaka, Bangladesh
+// Google Inc.
+// INTERNSHIP Salary: $20,000 - $25,000
+// Front End Developer
+// FULL-TIME Salary: $20,000 - $25,000
+// Google Inc.
+// Senior UX Designer
+// Dhaka, Bangladesh
+// Dhaka, Bangladesh
+// PART-TIME Salary: $20,000 - $25,000
+// Google Inc.
+// Marketing Manager
+// Dhaka, Bangladesh
+
+export const featuredJobs = [
+  {
+    title: "Techical Support Specialist",
+    type: "PART-TIME",
+    salary: "$80,000 - $105,000",
+    company: "Google Inc.",
+    location: "Dhaka, Bangladesh",
+    companyIcon: googleLogo,
+    id: 1,
+  },
+  {
+    title: "Senior UX Designer",
+    type: "FULL-TIME",
+    salary: "$20,000 - $25,000",
+    company: "Google Inc.",
+    location: "Dhaka, Bangladesh",
+    companyIcon: googleLogo,
+    id: 2,
+  },
+  {
+    title: "Marketing Officer",
+    type: "INTERNSHIP",
+    salary: "$20,000 - $25,000",
+    company: "Google Inc.",
+    location: "Dhaka, Bangladesh",
+    companyIcon: googleLogo,
+    id: 3,
+  },
+  {
+    title: "Junior Graphic Designer",
+    type: "PART-TIME",
+    salary: "$20,000 - $25,000",
+    company: "Google Inc.",
+    location: "Dhaka, Bangladesh",
+    companyIcon: googleLogo,
+    id: 4,
+  },
+  {
+    title: "Interaction Designer",
+    type: "INTERNSHIP",
+    salary: "$20,000 - $25,000",
+    company: "Google Inc.",
+    location: "Dhaka, Bangladesh",
+    companyIcon: googleLogo,
+    id: 5,
+  },
+  {
+    title: "Project Manager",
+    type: "FULL-TIME",
+    salary: "$60,000 - $105,000",
+    company: "Google Inc.",
+    location: "Dhaka, Bangladesh",
+    companyIcon: googleLogo,
+    id: 6,
+  },
+  {
+    title: "Software Engineer",
+    type: "FULL-TIME",
+    salary: "$80,000 - $105,000",
+    company: "Google Inc.",
+    location: "Dhaka, Bangladesh",
+    companyIcon: googleLogo,
+    id: 7,
+  },
+  {
+    title: "Visual Designer",
+    type: "PART-TIME",
+    salary: "$20,000 - $35,000",
+    company: "Google Inc.",
+    location: "Dhaka, Bangladesh",
+    companyIcon: googleLogo,
+    id: 8,
+  },
+  {
+    title: "Project Manager",
+    type: "FULL-TIME",
+    salary: "$40,000 - $75,000",
+    company: "Google Inc.",
+    location: "Dhaka, Bangladesh",
+    companyIcon: googleLogo,
+    id: 9,
+  },
+  {
+    title: "Front End Developer",
+    type: "FULL-TIME",
+    salary: "$40,000 - $75,000",
+    company: "Google Inc.",
+    location: "Dhaka, Bangladesh",
+    companyIcon: googleLogo,
+    id: 10,
+  },
+  {
+    title: "Senior UX Designer",
+    type: "INTERNSHIP",
+    salary: "$40,000 - $70,000",
+    company: "Google Inc.",
+    location: "Dhaka, Bangladesh",
+    companyIcon: googleLogo,
+    id: 11,
+  },
+  {
+    title: "Marketing Manager",
+    type: "FULL-TIME",
+    salary: "$90,000 - $132,000",
+    company: "Google Inc.",
+    location: "Dhaka, Bangladesh",
+    companyIcon: googleLogo,
+    id: 12,
   },
 ];
