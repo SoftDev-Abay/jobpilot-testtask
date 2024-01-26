@@ -1,0 +1,18 @@
+.section-testimonials {
+  background: var(--Gray-50, #f1f2f4);
+  h1 {
+    color: var(--Gray-Scale-900, #191f33);
+    text-align: center;
+
+    /* Heading/01 */
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px; /* 120% */
+  }
+  .testimonials-wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
