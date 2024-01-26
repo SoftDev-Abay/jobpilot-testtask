@@ -5,7 +5,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <CardBg background="#18191C" cardClassName="footer">
+      {/* <CardBg background="#18191C" cardClassName="footer">
         <div className="navigation"></div>
       </CardBg>
       <CardBg cardClassName="footer-rights">
@@ -19,6 +19,7 @@ const Footer = () => {
           </div>
         </div>
       </CardBg>
+    </> */}
     </>
   );
 };
