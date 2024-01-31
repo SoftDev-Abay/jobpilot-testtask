@@ -19,7 +19,7 @@ const LinksBar = () => {
         <div
           class="navigation-container"
           style={{
-            height: menuOpen ? "fit-content" : "47px",
+            height: menuOpen ? "282px" : "47px",
           }}
         >
           <div class="links">
@@ -107,19 +107,15 @@ const LinksBar = () => {
               </div>
             </div>
           </div>
-          <div
-            className="menu-container"
-            style={{
-              alignItems: menuOpen ? "normal" : "center",
-              top: !menuOpen ? "0" : "14px",
-            }}
-          >
-            <FaBars
-              className="icon"
-              onClick={() => {
-                setMenuOpen(!menuOpen);
-              }}
-            />
+          <div className="menu-container">
+            <div className="icon-container">
+              <FaBars
+                className="icon"
+                onClick={() => {
+                  setMenuOpen(!menuOpen);
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>

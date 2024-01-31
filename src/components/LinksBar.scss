@@ -10,7 +10,7 @@
     max-width: 1320px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
     transition: all 0.3s ease-in-out;
     @media (max-width: 1100px) {
       align-items: normal;
@@ -22,13 +22,19 @@
     .menu-container {
       display: none;
       justify-content: center;
-      align-items: center;
+      align-items: start;
       position: relative;
-      cursor: pointer;
-      .icon {
-        width: 24px;
-        height: 24px;
-        color: $gray-600;
+      .icon-container {
+        height: 47px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icon {
+          width: 24px;
+          height: 24px;
+          color: $gray-600;
+          cursor: pointer;
+        }
       }
       @media (max-width: 1100px) {
         display: flex;
