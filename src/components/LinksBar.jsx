@@ -8,6 +8,7 @@ import toggleIcon from "../assets/svg/toggleIcon.svg";
 import {
   // menu for adoptive navbar
   FaBars,
+  FaTimes,
 } from "react-icons/fa";
 const LinksBar = () => {
   const [activeLink, setActiveLink] = useState("Home");
@@ -109,12 +110,21 @@ const LinksBar = () => {
           </div>
           <div className="menu-container">
             <div className="icon-container">
-              <FaBars
-                className="icon"
-                onClick={() => {
-                  setMenuOpen(!menuOpen);
-                }}
-              />
+              {menuOpen ? (
+                <FaTimes
+                  className="icon"
+                  onClick={() => {
+                    setMenuOpen(!menuOpen);
+                  }}
+                />
+              ) : (
+                <FaBars
+                  className="icon"
+                  onClick={() => {
+                    setMenuOpen(!menuOpen);
+                  }}
+                />
+              )}
             </div>
           </div>
         </div>

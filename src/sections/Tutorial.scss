@@ -13,7 +13,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     gap: 24px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .step-box {
       position: relative;
       width: 264px;
@@ -29,6 +35,10 @@
         top: 4px;
         left: 205px;
         z-index: 1;
+
+        @media (max-width: 1500px) {
+          display: none;
+        }
       }
       .reverce-arrow {
         // 64 213
@@ -38,6 +48,9 @@
         transform: scale(-1, 1);
         rotate: 180deg;
         z-index: 1;
+        @media (max-width: 1500px) {
+          display: none;
+        }
       }
       .step-icon-wrapper {
         .step-icon-container {
